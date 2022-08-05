@@ -11,7 +11,7 @@ export default function Home() {
     <div className="wrap-home">
       <div className="wrap_cards d-flex flex-wrap justify-content-around py-3">
         {cocktails.drinks?.map((c) => (
-          <div className="card col-4 col-md-2 m-2 d-flex align-items-center shadow" key={c.idDrink} onClick={() =>navigate(`/cocktail/${c.idDrink}`)}>
+          <div className="card col-5 col-sm-3 col-md-2 m-2 d-flex align-items-center shadow" key={c.idDrink} onClick={() =>navigate(`/cocktail/${c.idDrink}`)}>
             
               <img  className="w-100 border" src={c.strDrinkThumb} alt="foto de cocktails" />
             
