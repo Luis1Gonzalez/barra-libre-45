@@ -31,21 +31,21 @@ fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${idDrink}`)
 
             <div>
                 <h3>Ingredients:</h3>
-                <p>{`${c.strMeasure1} of ${c.strIngredient1}`}</p>
-                <p>{`${c.strMeasure2} of ${c.strIngredient2}`}</p>
-                <p>{`${c.strMeasure3} of ${c.strIngredient3}`}</p>
-                <p>{`${c.strMeasure4} of ${c.strIngredient4}`}</p>
-                <p>{`${c.strMeasure5} of ${c.strIngredient5}` ? `${c.strMeasure5} of ${c.strIngredient5}` : ""}</p>
-                <p>{`${c.strMeasure6} of ${c.strIngredient6}`}</p>
-                <p>{`${c.strMeasure7} of ${c.strIngredient7}`}</p>
-                <p>{`${c.strMeasure8} of ${c.strIngredient8}`}</p>
-                <p>{`${c.strMeasure9} of ${c.strIngredient9}`}</p>
-                <p>{`${c.strMeasure10} of ${c.strIngredient10}`}</p>
-                <p>{`${c.strMeasure11} of ${c.strIngredient11}`}</p>
-                <p>{`${c.strMeasure12} of ${c.strIngredient12}`}</p>
-                <p>{`${c.strMeasure13} of ${c.strIngredient13}`}</p>
-                <p>{`${c.strMeasure14} of ${c.strIngredient14}`}</p>
-                <p>{`${c.strMeasure15} of ${c.strIngredient15}`}</p>
+                <p>{`${c.strMeasure1 ? c.strMeasure1 :""} ${c.strIngredient1 ? c.strIngredient1 : ""}`}</p>
+                <p>{`${c.strMeasure2 ? c.strMeasure2 :""} ${c.strIngredient2 ? c.strIngredient2 : ""}`}</p>
+                <p>{`${c.strMeasure3 ? c.strMeasure3 :""} ${c.strIngredient3 ? c.strIngredient3 : ""}`}</p>
+                <p>{`${c.strMeasure4 ? c.strMeasure4 :""} ${c.strIngredient4 ? c.strIngredient4 : ""}`}</p>
+                <p>{`${c.strMeasure5 ? c.strMeasure5 :""} ${c.strIngredient5 ? c.strIngredient5 : ""}`}</p>
+                <p>{`${c.strMeasure6 ? c.strMeasure6 :""} ${c.strIngredient6 ? c.strIngredient6 : ""}`}</p>
+                <p>{`${c.strMeasure7 ? c.strMeasure7 :""} ${c.strIngredient7 ? c.strIngredient7 : ""}`}</p>
+                <p>{`${c.strMeasure8 ? c.strMeasure8 :""} ${c.strIngredient8 ? c.strIngredient8 : ""}`}</p>
+                <p>{`${c.strMeasure9 ? c.strMeasure9 :""} ${c.strIngredient9 ? c.strIngredient9 : ""}`}</p>
+                <p>{`${c.strMeasure10 ? c.strMeasure10 :""} ${c.strIngredient10 ? c.strIngredient10 : ""}`}</p>
+                <p>{`${c.strMeasure11 ? c.strMeasure11 :""} ${c.strIngredient11 ? c.strIngredient11 : ""}`}</p>
+                <p>{`${c.strMeasure12 ? c.strMeasure12 :""} ${c.strIngredient12 ? c.strIngredient12 : ""}`}</p>
+                <p>{`${c.strMeasure13 ? c.strMeasure13 :""} ${c.strIngredient13 ? c.strIngredient13 : ""}`}</p>
+                <p>{`${c.strMeasure14 ? c.strMeasure14 :""} ${c.strIngredient14 ? c.strIngredient14 : ""}`}</p>
+                <p>{`${c.strMeasure15 ? c.strMeasure15 :""} ${c.strIngredient15 ? c.strIngredient15 : ""}`}</p>
             </div>
 
 
