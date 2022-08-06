@@ -5,9 +5,6 @@ import { useEffect, useState } from 'react';
 export default function HomeDetails(){
     const { idDrink } = useParams();
 const [details, setDetails] = useState([])
-let [ingredientes, setIngredientes]  = useState("")
-let strIngredient = []
-
 
     useEffect(() => {
 fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${idDrink}`)
@@ -15,19 +12,17 @@ fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${idDrink}`)
 .then(d => setDetails(d))
     },[idDrink])
 
-
-
     return(
-        <div className='wrap-details p-3'>
+        <div className='wrap-details p-1'>
             {details.drinks?.map((c) =>(
                 <div className="card-details bg-warning" key={c.idDrink}>
                     <img  className="w-100 border" src={c.strDrinkThumb} alt="foto de cocktails" />
                                 
             <h3>{c.strDrink}</h3>
-            <p>{c.strDrinkAlternate ? `Nombre Alternativo: ${c.strDrinkAlternate}` : "" }</p>
-            <p>{`Tipo: ${c.strAlcoholic}`}</p>
-            <p>{`Categoria: ${c.strCategory}`}</p>
-            <p>{c.strIBA ? `Clasificación IBA: ${c.strIBA}` : ""}</p>
+            <p>{c.strDrinkAlternate ? `Alternative Name: ${c.strDrinkAlternate}` : "" }</p>
+            <p>{`Tipe: ${c.strAlcoholic}`}</p>
+            <p>{`Category: ${c.strCategory}`}</p>
+            <p>{c.strIBA ? `Clasification IBA: ${c.strIBA}` : ""}</p>
 
             <div>
                 <h3>Ingredients:</h3>
@@ -48,6 +43,10 @@ fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${idDrink}`)
                 <p>{`${c.strMeasure15 ? c.strMeasure15 :""} ${c.strIngredient15 ? c.strIngredient15 : ""}`}</p>
             </div>
 
+<div className="wrap-instructions">
+    <h3>Instructions:</h3>
+    <p>{c.strInstructions}</p>
+</div>
 
 
 

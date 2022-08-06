@@ -6,7 +6,6 @@ export default function Home() {
   const navigate = useNavigate();
   const [cocktails] = UseCocktails();
   
-  console.log(cocktails);
   return (
     <div className="wrap-home">
       <div className="wrap_cards d-flex flex-wrap justify-content-around py-3">
