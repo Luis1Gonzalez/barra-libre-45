@@ -15,8 +15,8 @@ fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${idDrink}`)
     return(
         <div className='wrap-details p-1'>
             {details.drinks?.map((c) =>(
-                <div className="card-details bg-warning" key={c.idDrink}>
-                    <img  className="w-100 border" src={c.strDrinkThumb} alt="foto de cocktails" />
+                <div className="card-details px-2 bg-warning" key={c.idDrink}>
+                    <img  className="w-100 border my-2" src={c.strDrinkThumb} alt="foto de cocktails" />
                                 
             <h3>{c.strDrink}</h3>
             <p>{c.strDrinkAlternate ? `Alternative Name: ${c.strDrinkAlternate}` : "" }</p>
@@ -40,12 +40,20 @@ fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${idDrink}`)
                 <p>{`${c.strMeasure12 ? c.strMeasure12 :""} ${c.strIngredient12 ? c.strIngredient12 : ""}`}</p>
                 <p>{`${c.strMeasure13 ? c.strMeasure13 :""} ${c.strIngredient13 ? c.strIngredient13 : ""}`}</p>
                 <p>{`${c.strMeasure14 ? c.strMeasure14 :""} ${c.strIngredient14 ? c.strIngredient14 : ""}`}</p>
-                <p>{`${c.strMeasure15 ? c.strMeasure15 :""} ${c.strIngredient15 ? c.strIngredient15 : ""}`}</p>
+                <p>{`${c.strMeasure15 ? c.strMeasure15 :""} ${c.strIngredient15 ? c.strIngredient15 : ""}`}</p>                
+            </div>
+
+            <div>
+                <h6>{`Glass: ${c.strGlass}`}</h6>
             </div>
 
 <div className="wrap-instructions">
     <h3>Instructions:</h3>
     <p>{c.strInstructions}</p>
+</div>
+
+<div>
+    <h6>{`Modified: ${c.dateModified}`}</h6>
 </div>
 
 
