@@ -1,3 +1,4 @@
+import './App.css'
 import "../src/sass/custom.scss";
 import Header from "./components/shared/header";
 import Home from "./pages/home";
@@ -7,7 +8,7 @@ import { Routes, BrowserRouter, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="container-fluid px-md-6 bg-bigbg">
+    <div className="wrap container-fluid px-md-6 bg-bigbg">
       <BrowserRouter>
         <Header />
         <Routes>        
