@@ -10,7 +10,7 @@ export default function Home() {
     <div className="wrap-home">
       <div className="wrap_cards d-flex flex-wrap justify-content-around p-3">
         {cocktails.drinks?.map((c) => (
-          <div className="card bg-bigbg col-12 col-sm-3 col-md-2 my-2 d-flex flex-row justify-content-around  align-items-center" key={c.idDrink} onClick={() =>navigate(`/cocktail/${c.idDrink}`)}>
+          <div className="card bg-bigbg fs-6 col-12 col-sm-5 col-md-3 col-xl-2 mx-md-1 my-2 d-flex flex-row justify-content-around  align-items-center p-sm-2" key={c.idDrink} onClick={() =>navigate(`/cocktail/${c.idDrink}`)}>
             
               <img  className=" border" src={c.strDrinkThumb} alt="foto de cocktails" />
             

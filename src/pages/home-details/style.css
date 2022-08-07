@@ -1,0 +1,12 @@
+.wrap-details{
+    min-height:67vh;
+}
+
+h4, h2{
+    color:#fff;
+    text-shadow: 0 2px 3px blue, 0 3px 5px #000;
+}
+
+p, h6{
+    text-shadow: 0 0 3px #fff, 0 0 5px #000;
+}
