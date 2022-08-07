@@ -8,7 +8,8 @@ h4, h2{
 }
 
 p, h6{
-    text-shadow: 0 0 3px #fff, 0 0 5px #000;
+    color:#fff;
+    text-shadow: 2px 2px 4px #000, 0 0 6px #fff;
 }
 
 .card-image{
