@@ -1,10 +1,10 @@
-.wrap-header{
+/* .wrap-header{
     background: rgb(10,29,246);
     background: linear-gradient(121deg, rgba(10,29,246,1) 0%, rgba(253,29,29,1) 50%, rgba(249,251,25,1) 100%); 
     position:relative;
-}
+} */
 
-.wrap-movil{
+/* .wrap-movil{
     height:150px;
     background: rgb(10,29,246);
     background: linear-gradient(345deg, rgba(10,29,246,1) 0%, rgba(253,29,29,1) 50%, rgba(249,251,25,1) 100%); 
@@ -13,8 +13,8 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name:neon;
-}
-
+} */
+/* 
 .wrap-logo{
     width: 100%;
     background: rgb(91,91,97);
@@ -26,10 +26,10 @@
 
 .wrap-logo img{
     height:100px;
-}
+} */
 
-@keyframes neon {
+/* @keyframes neon {
     from {
         transform: translateX(100%);
-    }
-}
+    } */
+/* } */
