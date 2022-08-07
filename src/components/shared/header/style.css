@@ -17,7 +17,8 @@
 
 .wrap-logo{
     width: 100%;
-    background-color: #000;
+    background: rgb(91,91,97);
+    background: linear-gradient(214deg, rgba(91,91,97,1) 35%, rgba(167,163,163,1) 50%, rgba(91,91,97,1) 75%); 
     height:145px;
     position:absolute;
     top:2.5px;

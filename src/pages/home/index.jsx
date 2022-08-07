@@ -8,13 +8,13 @@ export default function Home() {
   
   return (
     <div className="wrap-home">
-      <div className="wrap_cards d-flex flex-wrap justify-content-around py-3">
+      <div className="wrap_cards d-flex flex-wrap justify-content-around p-3">
         {cocktails.drinks?.map((c) => (
-          <div className="card col-5 col-sm-3 col-md-2 m-2 d-flex align-items-center shadow" key={c.idDrink} onClick={() =>navigate(`/cocktail/${c.idDrink}`)}>
+          <div className="card bg-bigbg col-12 col-sm-3 col-md-2 my-2 d-flex flex-row justify-content-around  align-items-center" key={c.idDrink} onClick={() =>navigate(`/cocktail/${c.idDrink}`)}>
             
-              <img  className="w-100 border" src={c.strDrinkThumb} alt="foto de cocktails" />
+              <img  className=" border" src={c.strDrinkThumb} alt="foto de cocktails" />
             
-            <p>{c.strDrink}</p>
+            <p className="m-0 w-50 text-center bg-muted">{c.strDrink}</p>
           </div>
         ))}
       </div>

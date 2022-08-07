@@ -1,5 +1,18 @@
+.card{
+    height:130px;
+    box-shadow: 0 0 3px #000, 0 0 9px rgb(81, 81, 250);
+}
+
+.card img{
+height:90%;
+padding:5px;
+border-radius:10px;
+box-shadow: 0 0 6px #ffff inset;
+}
+
 .card p{
-    font-size:.6rem
+    font-size:1rem;
+    text-shadow: 0 0 2px #fff, 0 0 4px #000;
 }
 
 .wrap-details p{
