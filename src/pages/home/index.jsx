@@ -14,7 +14,7 @@ export default function Home() {
             
               <img  className=" border" src={c.strDrinkThumb} alt="foto de cocktails" />
             
-            <p className="m-0 w-50 text-center bg-muted">{c.strDrink}</p>
+            <p className="m-0 w-50 text-center text-white bg-muted">{c.strDrink}</p>
           </div>
         ))}
       </div>
