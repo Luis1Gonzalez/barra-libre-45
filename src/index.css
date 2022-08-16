@@ -12,9 +12,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
+<<<<<<< HEAD
+=======
+
+>>>>>>> fb3363943a978593502ccd6de0bda5e79181425e
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
