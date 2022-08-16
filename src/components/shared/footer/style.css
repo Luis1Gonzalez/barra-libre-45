@@ -1,8 +1,7 @@
 .footer{
     background: rgb(91,91,97);
     background: linear-gradient(214deg, rgba(91,91,97,1) 35%, rgba(167,163,163,1) 50%, rgba(91,91,97,1) 75%); 
-    position: absolute;
-    bottom: -2;
+
     width: 100%;
     display: flex;
     flex-direction:column;

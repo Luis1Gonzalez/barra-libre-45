@@ -1,10 +1,13 @@
 import "./style.css";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { Link } from 'react-router-dom';
+
 
 export default function HomeDetails() {
   const { idDrink } = useParams();
   const [details, setDetails] = useState([]);
+
 
   useEffect(() => {
     fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${idDrink}`)
@@ -13,7 +16,7 @@ export default function HomeDetails() {
   }, [idDrink]);
 
   return (
-    <div className="wrap-details p-1 d-flex align-items-center">
+    <div className="wrap-details px-1 py-4 d-flex flex-column align-items-center">
       {details.drinks?.map((c) => (
         <div
           className="d-flex flex-wrap col-12 justify-content-around"
@@ -96,8 +99,9 @@ export default function HomeDetails() {
             <h4 className="text-center m-0">Instructions</h4>
             <p className="my-2">{c.strInstructions}</p>
           </div>
-        </div>
+        </div>        
       ))}
+      <button><Link className="back" to = '/'>Back</Link></button>
     </div>
   );
 }
