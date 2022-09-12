@@ -1,5 +1,5 @@
 .wrap {    
     background: rgb(91,91,97);
     background: linear-gradient(214deg, rgba(91,91,97,1) 35%, rgba(167,163,163,1) 50%, rgba(91,91,97,1) 75%); 
-height:auto;
+min-height:100vh;
 }

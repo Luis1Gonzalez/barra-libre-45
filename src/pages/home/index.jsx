@@ -52,11 +52,11 @@ console.log(maxi)
 
 
   return (
-    <div className="wrap-home">
+    <div className="wrap-home pt-5">
 
 <Form newCocktail={getCocktail}/>
 
-      <div className="wrap_cards d-flex flex-wrap justify-content-around p-3">
+      <div className="wrap_cards d-flex flex-wrap justify-content-around px-3 py-5">
         {cocktails.drinks?.slice((page-1)*numByPagina, (page-1)*numByPagina+numByPagina).map((c) => (
           <div className="card bg-bigbg fs-6 col-12 col-sm-5 col-md-3 col-xl-2 mx-md-1 my-2 d-flex flex-row justify-content-around  align-items-center p-sm-2" key={c.idDrink} onClick={() =>navigate(`/cocktail/${c.idDrink}`)}>
             

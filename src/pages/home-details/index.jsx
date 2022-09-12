@@ -16,7 +16,7 @@ export default function HomeDetails() {
   }, [idDrink]);
 
   return (
-    <div className="wrap-details px-1 py-4 d-flex flex-column align-items-center">
+    <div className="wrap-details px-1 py-5 d-flex flex-column align-items-center">
       {details.drinks?.map((c) => (
         <div
           className="d-flex flex-wrap col-12 justify-content-around"
@@ -44,7 +44,7 @@ export default function HomeDetails() {
             <p className="m-0 text-center shadow">{c.strIBA ? c.strIBA : ""}</p>
           </div>
 
-          <div className="card-ingredients col-12 col-md-3 px-3 py-1">
+          <div className="card-ingredients col-12 col-md-3 px-3 py-4">
             <h4 className="text-center m-0">Ingredients</h4>
             <ul></ul>
             <p className="m-0">{`${c.strMeasure1 ? c.strMeasure1 : ""} ${
@@ -95,7 +95,7 @@ export default function HomeDetails() {
             <h6>{`Glass: ${c.strGlass}`}</h6>
           </div>
 
-          <div className="card-instructions px-3 py-1">
+          <div className="card-instructions px-3 pt-1 pb-5">
             <h4 className="text-center m-0">Instructions</h4>
             <p className="my-2">{c.strInstructions}</p>
           </div>
