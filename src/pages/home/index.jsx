@@ -58,7 +58,7 @@ console.log(maxi)
 
       <div className="wrap_cards d-flex flex-wrap justify-content-around px-3 py-5">
         {cocktails.drinks?.slice((page-1)*numByPagina, (page-1)*numByPagina+numByPagina).map((c) => (
-          <div className="card bg-bigbg fs-6 col-12 col-sm-5 col-md-3 col-xl-2 mx-md-1 my-2 d-flex flex-row justify-content-around  align-items-center p-sm-2" key={c.idDrink} onClick={() =>navigate(`/cocktail/${c.idDrink}`)}>
+          <div className="card bg-bigbg fs-6 col-12 col-sm-5 col-md-3 mx-md-1 my-2 d-flex flex-row justify-content-around  align-items-center p-sm-2" key={c.idDrink} onClick={() =>navigate(`/cocktail/${c.idDrink}`)}>
             
               <img  className=" border" src={c.strDrinkThumb ? c.strDrinkThumb : 'https://media.istockphoto.com/photos/3d-render-breaking-wine-glass-on-black-picture-id540739300?k=20&m=540739300&s=612x612&w=0&h=BkwnI9Lf1NGMBB_IE_FH9lYRSso4rABmpDtf1SzV6-8='} alt="foto de cocktails" />
             
